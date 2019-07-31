@@ -1,0 +1,5 @@
+@import '../global';
+
+.ex-close {
+  @include close();
+}

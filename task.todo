@@ -1,0 +1,13 @@
+text:
+  type:
+    ☐ normal
+    ☐ hover default:pointer|highlight
+  attr:
+    ☐ pointer
+    ☐ highlight
+```
+<ex-text></ex-text>
+<ex-text hover=""></ex-text>
+```
+
+button:

@@ -1,0 +1,27 @@
+@import '../global';
+
+.ex-container {
+  position: relative;
+
+  &-mask {
+    .ex-loading {
+      position: relative;
+      z-index: 1000;
+    }
+  }
+
+  &__block {
+    background: $color-loading-block;
+    color: $color-white;
+
+    @include wh(120px);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1000;
+  }
+}

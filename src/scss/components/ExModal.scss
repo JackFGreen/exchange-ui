@@ -1,0 +1,22 @@
+@import '../global';
+
+.ex-modal {
+  &__cont {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 1000;
+  }
+
+  .ex-mask {
+    position: fixed;
+  }
+
+  .ex-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1001;
+  }
+}

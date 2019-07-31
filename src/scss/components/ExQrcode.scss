@@ -1,0 +1,14 @@
+@import '../global';
+@import '../layout.scss';
+
+.ex-qrcode {
+  border-radius: 2px;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 0;
+  .qrcode {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}

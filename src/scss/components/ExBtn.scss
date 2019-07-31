@@ -1,0 +1,42 @@
+@import '../global';
+@import '../layout.scss';
+
+.ex-btn {
+  width: 100%;
+  @include hh(2.75em);
+  border-radius: 0.25em;
+
+  background: $color-theme;
+  font-size: $size-base;
+  color: $color-white;
+
+  @extend %text-center;
+  @extend %cursor-pointer;
+  @extend %border-none;
+  @extend %outline-none;
+
+  &--disabled {
+    background: $color-base-light;
+    @extend %cursor-disabled;
+  }
+
+  &.ex-btn-text {
+    background: none;
+    color: $color-theme;
+    width: auto;
+
+    &--disabled {
+      @extend %cursor-disabled;
+    }
+  }
+
+  &.ex-btn-border {
+    background: none;
+    color: $color-theme;
+    border: 1px solid currentColor;
+
+    &--disabled {
+      @extend %cursor-disabled;
+    }
+  }
+}

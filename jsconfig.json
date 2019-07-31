@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@src/*": ["src/*"],
+      "@packages/*": ["src/packages/*"],
+      "@components/*": ["src/components/*"],
+      "@tools/*": ["src/mixins/*"],
+      "@constant/*": ["src/constant/*"],
+      "@submodules/*": ["submodules/*"]
+    },
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": ["src"]
+}

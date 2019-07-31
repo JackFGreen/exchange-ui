@@ -1,0 +1,10 @@
+@import '../global';
+
+.ex-mask {
+  @include wh(100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: $color-mask;
+  z-index: 999;
+}

@@ -1,0 +1,21 @@
+@import '../global';
+
+.ex-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  @include spinner(18px);
+  .load-spinner {
+    margin-right: 6px;
+  }
+
+  &-column {
+    flex-direction: column;
+    .load-spinner {
+      margin-right: 0;
+      margin-bottom: 6px;
+    }
+  }
+}
